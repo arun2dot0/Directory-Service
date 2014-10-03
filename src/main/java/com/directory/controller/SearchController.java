@@ -12,6 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.stereotype.*;
 import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import com.directory.query.LdapSearch;
@@ -33,6 +34,17 @@ public class SearchController {
         return searchResults;
     }
 
+    
+    @RequestMapping("/hello")
+    @ResponseBody
+    public String  hello(@RequestParam (value = "name", required = false)String name ) {
+    	
+    	if(StringUtils.isEmpty(name))
+    		return "Hello World!";
+    	else
+    		return "Hello" + name;
+    }
+    
     public static void main(String[] args) throws Exception {
     	SpringApplication.run(SearchController.class, args);
     }
