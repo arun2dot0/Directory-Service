@@ -28,12 +28,9 @@ public class SearchController {
     @RequestMapping("/search")
     @ResponseBody
     List<Person> home(@RequestParam (value = "name", required = true)String name ) {
-       // return "Hello World!";
     	Assert.notNull(name);
         List<Person> searchResults = search.searchPerson(name);
-        
         return searchResults;
-        
     }
 
     public static void main(String[] args) throws Exception {
