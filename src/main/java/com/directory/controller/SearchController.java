@@ -37,6 +37,7 @@ public class SearchController {
 
     
     @RequestMapping("/hello")
+    @ResponseBody
     public String  hello(@RequestParam (value = "name", required = false)String name ) {
     	String greeting ="";
     	if(StringUtils.isEmpty(name))
