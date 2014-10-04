@@ -38,11 +38,13 @@ public class SearchController {
     
     @RequestMapping("/hello")
     public String  hello(@RequestParam (value = "name", required = false)String name ) {
-    	
+    	String greeting ="";
     	if(StringUtils.isEmpty(name))
-    		return "Hello World!";
+    		greeting = "Hello World!";
     	else
-    		return "Welcome " + name +"!";
+    		greeting = "Welcome " + name +"!";
+    	
+    	return greeting;
     }
     
     public static void main(String[] args) throws Exception {
