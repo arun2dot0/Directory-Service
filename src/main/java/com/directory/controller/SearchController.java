@@ -41,7 +41,7 @@ public class SearchController {
     	if(StringUtils.isEmpty(name))
     		return "Hello World!";
     	else
-    		return "Hello" + name;
+    		return "Hello " + name +"!";
     }
     
     public static void main(String[] args) throws Exception {
