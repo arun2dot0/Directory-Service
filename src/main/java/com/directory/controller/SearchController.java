@@ -26,7 +26,8 @@ public class SearchController {
 
 	@Autowired
 	LdapSearch search;
-    @RequestMapping("/search")
+
+	@RequestMapping("/search")
     @ResponseBody
     List<Person> home(@RequestParam (value = "name", required = true)String name ) {
     	Assert.notNull(name);
