@@ -43,7 +43,7 @@ public class SearchController {
     	if(StringUtils.isEmpty(name))
     		greeting = "Hello World!";
     	else
-    		greeting = "Welcome " + name +"!";
+    		greeting = "Hello " + name +"!";
     	
     	return greeting;
     }
