@@ -41,9 +41,9 @@ public class SearchController {
     public String  hello(@RequestParam (value = "name", required = false)String name ) {
     	String greeting ="";
     	if(StringUtils.isEmpty(name))
-    		greeting = "Hello World!";
+    		greeting = "Hello World from Branch!";
     	else
-    		greeting = "Hello " + name +"!";
+    		greeting = "Hello World " + name +" from Branch!";
     	
     	return greeting;
     }
