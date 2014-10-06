@@ -1,4 +1,4 @@
 Directory-Service
 =================
 
-Spring Boot application 
+Demonstrating Spring Boot application with Jenkins build
