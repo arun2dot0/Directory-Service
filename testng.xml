@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Portal" verbose = "3" >
+  <test name = "Full">
+    <packages>
+      <package name = "com.directory.*">
+        <exclude name = "com.directory.query.*"/>
+      </package>
+   </packages>
+  </test>
+</suite>
