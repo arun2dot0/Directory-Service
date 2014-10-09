@@ -47,11 +47,12 @@
      	<groupId>org.mockito</groupId>
      	<artifactId>mockito-core</artifactId>
      </dependency>
-     <dependency>
+    <!--  <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>6.8.8</version>
-    </dependency>
+      <scope>test</scope>
+    </dependency> -->
 
        
      <dependency>
@@ -66,7 +67,7 @@
      </dependency>
 </dependencies>
 
-<build>
+<!-- <build>
 <plugins>
  <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -80,7 +81,7 @@
         </configuration>
       </plugin>
 </plugins>
-</build>
+</build> -->
 
  <reporting>
     <plugins>
