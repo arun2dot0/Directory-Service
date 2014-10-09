@@ -41,9 +41,9 @@ public class SearchController {
     public String  hello(@RequestParam (value = "name", required = false)String name ) {
     	String greeting ="";
     	if(StringUtils.isEmpty(name))
-    		greeting = "Welcome World!";
+    		greeting = "Hello World!";
     	else
-    		greeting = "Welcome " + name +"!";
+    		greeting = "Hello " + name +"!";
     	
     	return greeting;
     }
